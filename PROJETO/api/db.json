@@ -14,11 +14,6 @@
       "nome": "marta",
       "email": "marta@gmail.com",
       "id": 8
-    },
-    {
-      "nome": "Fabiana",
-      "email": "fabiana.tolentino@hotmail.com",
-      "id": 10
     }
   ],
   "mentorias": [
@@ -44,11 +39,6 @@
       },
       "status": false,
       "id": 20
-    },
-    {
-      "nome": "Fabiana",
-      "email": "fabiana.tolentino@hotmail.com",
-      "id": 21
     }
   ],
   "turmas": [],
