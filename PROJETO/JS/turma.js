@@ -40,7 +40,7 @@ const getTurmas = async (textoPesquisa = null) => {
     renderTurmas(turmas) // mostrar em tela os novos mentores
 }
 const editarturma = (id) => {
-    window.location = `../html/editar.html?id=${id}`
+    window.location = `../html/editarTurma.html?id=${id}`
 }
 
 const excluirturma = async (id) => {

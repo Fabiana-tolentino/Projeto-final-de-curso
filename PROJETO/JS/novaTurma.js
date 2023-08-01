@@ -1,4 +1,4 @@
-const form = document.getElementById("myForm")
+const form = document.getElementById("form")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault() // tira o comportamento padrao de enviar para o back, pois será tratado aqui os dados

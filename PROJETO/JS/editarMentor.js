@@ -1,4 +1,4 @@
-const form = document.getElementById('myForm')
+const form = document.getElementById('form')
 let mentorId = null // variável global para armazena o livro em edição
 
 const getIdUrl = () => {

@@ -1,6 +1,6 @@
 const hiddenInputElement = document.getElementById('selectedMentoria');
 
-const form = document.getElementById("myForm");
+const form = document.getElementById("form");
 
 let mentoriaId = null;
 

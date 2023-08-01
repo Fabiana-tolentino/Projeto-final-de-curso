@@ -40,7 +40,7 @@ const novoMentor = () =>{
 }
 
 const editarMentor = (id) => {
-    window.location = `html/editar.html?id=${id}`
+    window.location = `html/editarMentor.html?id=${id}`
 }
 
 const excluirMentor = async (id) => {

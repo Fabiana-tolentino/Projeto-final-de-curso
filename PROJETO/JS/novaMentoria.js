@@ -1,4 +1,4 @@
-const form = document.getElementById("myForm")
+const form = document.getElementById("form")
 
 
 const buscarMentoria = async (id) => {

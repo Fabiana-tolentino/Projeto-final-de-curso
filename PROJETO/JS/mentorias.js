@@ -41,7 +41,7 @@ const getMentorias = async (textoPesquisa = null) => {
 }
 
 const editarMentoria = (id) => {
-    window.location = `html/editar.html?id=${id}`
+    window.location = `html/editarMentoria.html?id=${id}`
 }
 
 const excluirMentoria = async (id) => {

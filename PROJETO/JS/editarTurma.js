@@ -1,5 +1,5 @@
 // 1°) Recupera o ID
-const form = document.getElementById ("myForm") // capturando o  formulario DO HTML
+const form = document.getElementById ("form") // capturando o  formulario DO HTML
 let turmaId = null // variavel global para armazenar o mentor em edição
 
 // O URLSearchParams permite analisar e manipular os parametros de uma URL; 
