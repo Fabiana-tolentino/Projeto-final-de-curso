@@ -8,7 +8,7 @@ const getIdUrl = () => {
 }
 
 const buscarMentor = async () => {
-    const resposta = await fetch(`http://localhost:3000/mentores/${mentorId}`)
+    const resposta = await fetch(`https://api-projeto-de-final-de-curso.onrender.com/${mentorId}`)
     const mentor = await resposta.json()
     return mentor
 }
@@ -33,7 +33,7 @@ const carregarDadosFormulario = async (mentor) => {
 }
 
 const editarMentor = async (mentor) => {
-    await fetch(`http://localhost:3000/mentor/${mentorId}`, {
+    await fetch(`https://api-projeto-final-de-curso-g2z0.onrender.commentor/${mentorId}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -47,7 +47,7 @@ const editarMentor = async (mentor) => {
 
 
 const buscarMentores = async () => {
-    const resposta = await fetch('http://localhost:3000/mentores')
+    const resposta = await fetch('https://api-projeto-de-final-de-curso.onrender.com')
     const mentores = await resposta.json()
     return mentores
 }

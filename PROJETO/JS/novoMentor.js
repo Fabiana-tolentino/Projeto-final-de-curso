@@ -2,13 +2,13 @@ const form = document.getElementById("form")
 
 
 const buscarMentor = async (id) => {
-    const resposta = await fetch (`http://localhost:3000/mentores/${id}`)
+    const resposta = await fetch (`https://api-projeto-de-final-de-curso.onrender.com/${id}`)
     const mentor = await resposta.json()
     return mentor
 }
 
 const buscarMentores = async () => {
-    const resposta = await fetch('http://localhost:3000/mentores')
+    const resposta = await fetch('https://api-projeto-de-final-de-curso.onrender.com')
     const mentores = await resposta.json()
     return mentores
 }
@@ -30,7 +30,7 @@ const cadastrarMentor =async (mentor) =>{
     // Função que escuta o evento de envio do formulário
     // o URL é o primeiro parametro, depois passa o segundo parametro para especificar
     // qual o método e como será a requisição. 
-    await fetch ("http://localhost:3000/mentores", {
+    await fetch ("https://api-projeto-de-final-de-curso.onrender.com", {
         method: "POST",
         headers: {
             "Accept": "application/json, text/plain, */* ",

@@ -5,13 +5,13 @@ const form = document.getElementById("form");
 let mentoriaId = null;
 
 const buscarMentor = async (id) => {
-    const response = await fetch(`http://localhost:3000/mentores/${id}`);
+    const response = await fetch(`https://api-projeto-de-final-de-curso.onrender.com/${id}`);
     const mentor = await response.json();
     return mentor;
   };
   
   const buscarMentores = async () => {
-    const response = await fetch(`http://localhost:3000/mentores`);
+    const response = await fetch(`https://api-projeto-de-final-de-curso.onrender.com`);
     const mentores = await response.json();
     console.log(buscarMentores)
     return mentores;
@@ -37,12 +37,12 @@ const buscarMentor = async (id) => {
   };
 
   const buscarMentoria = async () => {
-    const response = await fetch(`http://localhost:3000/mentorias/${mentoriaId}`);
+    const response = await fetch(`https://api-projeto-final-de-curso-g2z0.onrender.commentorias/${mentoriaId}`);
     const mentoria = await response.json();
     return mentoria;
   };
   const editarMentoria = async (mentoria) => {
-    await fetch(`http://localhost:3000/mentorias/${mentoriaId}`, {
+    await fetch(`https://api-projeto-final-de-curso-g2z0.onrender.commentorias/${mentoriaId}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',

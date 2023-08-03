@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
 const newTurma =async (turma) =>{ // escuta de evento
 // o URL é o primeiro parametro, depois passa o segundo parametro para especificar
 // qual o método e como será a requisição. 
-await fetch ("http://localhost:3000/turmas", {
+await fetch ("https://api-projeto-final-de-curso-g2z0.onrender.comturmas", {
     method: "POST",
     headers: {
         "Accept": "application/json, text/plain, */* ",

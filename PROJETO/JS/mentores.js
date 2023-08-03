@@ -30,7 +30,7 @@ const getMentores = async (textoPesquisa = null) => {
         texto = `?q=${textoPesquisa}`
     }
 
-    const response = await fetch ( `http://localhost:3000/mentores${texto}`)
+    const response = await fetch ( `https://api-projeto-de-final-de-curso.onrender.com${texto}`)
     const mentores = await response.json()
     mostrarMentores(mentores) // mostrar em tela os novos mentores
 }
@@ -44,7 +44,7 @@ const editarMentor = (id) => {
 }
 
 const excluirMentor = async (id) => {
-    await fetch (`http://localhost:3000/mentores/${id}`,{
+    await fetch (`https://api-projeto-de-final-de-curso.onrender.com/${id}`,{
         method:'DELETE'
     })
     getMentores() 

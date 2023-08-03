@@ -33,7 +33,7 @@ const getTurmas = async (textoPesquisa = null) => {
         texto = `?q=${textoPesquisa}`
     }
 
-    const response = await fetch ( `http://localhost:3000/mentores${texto}`)
+    const response = await fetch ( `https://api-projeto-de-final-de-curso.onrender.com${texto}`)
     const turmas = await response.json()
     
 
@@ -44,7 +44,7 @@ const editarturma = (id) => {
 }
 
 const excluirturma = async (id) => {
-    await fetch (`http://localhost:3000/turmas/${id}`,{
+    await fetch (`https://api-projeto-final-de-curso-g2z0.onrender.comturmas/${id}`,{
         method:'DELETE'
     })
 }

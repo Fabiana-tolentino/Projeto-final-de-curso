@@ -13,7 +13,7 @@ const getIdUrl =  () => {
 }
  // 2°) Busco o mentor
 const buscarturma = async () => {
-    const response = await fetch (`http://localhost:3000/mentores/${turmaId}`)
+    const response = await fetch (`https://api-projeto-de-final-de-curso.onrender.com/${turmaId}`)
     const turma = await response.json()
     return turma
 }
@@ -41,7 +41,7 @@ const carregarDadosForm = async (turma) => {
 
 
 const editarTurma = async (turma) => {
-    await fetch (`http://localhost:3000/mentores/${turmaId}`, {
+    await fetch (`https://api-projeto-de-final-de-curso.onrender.com/${turmaId}`, {
         method: 'PUT',
         headers: {
             "Accept": "application/json, text/plain, */* ",

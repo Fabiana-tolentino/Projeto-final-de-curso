@@ -34,7 +34,7 @@ const getMentorias = async (textoPesquisa = null) => {
     if (textoPesquisa){
         texto = `?q=${textoPesquisa}`
     }
-    const response = await fetch ( `http://localhost:3000/mentorias${texto}`)
+    const response = await fetch ( `https://api-projeto-final-de-curso-g2z0.onrender.commentorias${texto}`)
     const mentorias = await response.json()
     renderMentorias(mentorias) // mostrar em tela os novas mentorias
    
@@ -45,7 +45,7 @@ const editarMentoria = (id) => {
 }
 
 const excluirMentoria = async (id) => {
-    await fetch (`http://localhost:3000/mentorias/${id}`,{
+    await fetch (`https://api-projeto-final-de-curso-g2z0.onrender.commentorias/${id}`,{
         method:'DELETE'
     })
     getMentorias()

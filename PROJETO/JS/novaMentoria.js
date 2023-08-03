@@ -2,13 +2,13 @@ const form = document.getElementById("form")
 
 
 const buscarMentoria = async (id) => {
-  const response = await fetch (`http://localhost:3000/mentorias/${id}`)
+  const response = await fetch (`https://api-projeto-final-de-curso-g2z0.onrender.commentorias/${id}`)
   const mentoria = await response.json()
   return mentoria
 }
 
 const buscarMentorias = async () => {
-  const response = await fetch (`http://localhost:3000/mentorias`)
+  const response = await fetch (`https://api-projeto-final-de-curso-g2z0.onrender.commentorias`)
   const mentorias = await response.json()
   return mentorias
 }
@@ -29,7 +29,7 @@ const carregarSelect = async () => {
 }
 
 const newMentor = async (mentor) => {
-  await fetch (`http://localhost:3000/mentorias`, {
+  await fetch (`https://api-projeto-final-de-curso-g2z0.onrender.commentorias`, {
     method: 'POST',
     headers: {
       "Accept": "application/json, text/plain, */* ",
